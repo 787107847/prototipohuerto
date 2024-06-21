@@ -1,8 +1,6 @@
-# prototipohuerto
-Prototipo de huerto flotante con agua desalinizada mediante evaporación con energía solar
+## Prototipo de huerto flotante con agua desalinizada mediante evaporación con energía solar  /  Prototype of a floating garden with desalinated water through evaporation using solar energy
 ![image](PrototipoVistaSuperiorAjustado.png)
 
-## Prototipo de huerto flotante con agua desalinizada mediante evaporación con energía solar  /  Prototype of a floating garden with desalinated water through evaporation using solar energy
 ### Planteamiento del problema / Problem statement
 
 La escasez de agua es ya un problema mundial y una realidad nacional en Chile; donde en el 2022 el Ministerio de obras públicas, a través de la Dirección General de Aguas decretó zona de escasez hídrica adiversas provincias del país, representando el 47,5% de la población. Según un estudio de esta misma institución (DGA, 2020), en Chile se proyecta un aumento de temperatura entre 1 y 2,5°C con una baja de precipitaciones que indica una reducción de hasta 50% entre el 2030 y 2060 en algunas zonas del país. Esto es especialmente relevante para las regiones del norte y del centro de Chile, que se enfrentan a una amenaza real de escacez de agua. De igual forma, otro problema al que algunas comunidades se ven afectadas es la falta de terrenos cultivables, que las obligan a depender de la importación para abastecerse de vegetales y hortalizas. Ejemplo de esto lo podemos ver en la isla de Rapa Nui y demás zonas insulares, donde los precios de estos alimentos son considerablemente más altos que en Chile Continental (De Vicenzi, 2023).
