@@ -13,13 +13,26 @@ Water scarcity is already a global problem and a national reality in Chile; wher
 
 ### Estado del Arte / State of the art
 
-En lo que se refiere a sistemas de recolección de agua dulce hay un sinfín de técnicas y dipositivos que sirven, algunos con mayor éxito que otros. Sin embargo, para nuestro proyecto nos centraremos en sistemas de recolección de agua que aprovechan la evaporación de esta a través de la exposición a los rayos del sol. Específicamente a través de técnicas que crean un sistema invernadero, aprovechando la condensación. Estudios como como Lachhab et al. (2021) y Sevilla y Follari (2023) ya han comprobado la efectividad de este tipo de técnicas para la desalinización de agua. Y ya existen prototipos funcionales en el mercado como WaterPod o HELIO WATER que utilizan estas técnicas.
+En lo que se refiere a sistemas de recolección de agua dulce hay un sinfín de técnicas y dipositivos que sirven, algunos con mayor éxito que otros. Sin embargo, para nuestro proyecto nos centraremos en sistemas de recolección de agua que aprovechan la evaporación de esta a través de la exposición a los rayos del sol. Específicamente a través de técnicas que crean un sistema invernadero, aprovechando la condensación. Estudios como como Lachhab et al. (2021) y Sevilla y Follari (2023) ya han comprobado la efectividad de este tipo de técnicas para la desalinización de agua. Y ya existen prototipos funcionales en el mercado como WaterPod o HELIO WATER que utilizan estas técnicas. Sin embargo, aún tienen un gran reto a superar por dalente: No son capaces de generar los volúmenes de agua de una desalinizadora convencional. Pero, ¿y si la cantidad de agua recolectada fuera suficiente para la agricultura a pequeña escala?, esta es la idea que han explorado iniciativas como la de Nemo's garden en Italia y la de Leila CLark en Reino Unido, uniendo la idea de la obtención de agua con la agricultura a pequeña escala con prototipos funcionales que han probado ser funcionales en sus respectivos paises. Este técnica de cultivo tiene varias ventajas:
 
-When it comes to freshwater collection systems, there are countless techniques and devices that serve, some with greater success than others. However, for our project we will focus on water collection systems that take advantage of water evaporation through exposure to the sun's rays. Specifically through techniques that create a greenhouse system, taking advantage of condensation. Studies such as Lachhab et al. (2021) and Sevilla and Follari (2023) have already verified the effectiveness of this type of techniques for water desalination. And there are already functional prototypes on the market such as WaterPod or HELIO WATER that use these techniques.
+* Ahorro de recursos hídricos
+* Aprovechamiento de espacios donde antes no se podía cultivar.
+* Autosuficiencia de las comunidades
+* Hace innecesario el uso de pesticidas
+  
+When it comes to freshwater collection systems, there are countless techniques and devices that serve, some with greater success than others. However, for our project we will focus on water collection systems that take advantage of water evaporation through exposure to the sun's rays. Specifically through techniques that create a greenhouse system, taking advantage of condensation. Studies such as Lachhab et al. (2021) and Sevilla and Follari (2023) have already verified the effectiveness of this type of techniques for water desalination. And there are already functional prototypes on the market such as WaterPod or HELIO WATER that use these techniques.However, they still have a great challenge to overcome: They are not capable of generating the volumes of water from a conventional desalination plant. But what if the amount of water collected was sufficient for small-scale agriculture? This is the idea that initiatives such as the one by Nemo's garden in Italy and the one by Leila Clark in the United Kingdom have explored, uniting the idea of ​​obtaining water trough solar evaporation with small-scale agriculture with functional prototypes that have proven to be functional in their respective countries. This cultivation technique has several advantages:
+
+* Saving water resources
+* Taking advantage of spaces where cultivation could not be done before.
+* Community self-sufficiency
+* Makes unnecessary the use of pesticides
+
+![image](Nemos_Garten.jpg)
+![image](LeilaClark'sPrototipe.png)
 
 ------
 
 
-### 
+### Nuestra propuesta / Our Proposal
 
 
