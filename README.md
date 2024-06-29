@@ -33,4 +33,31 @@ When it comes to freshwater collection systems, there are countless techniques a
 
 ### Nuestra propuesta / Our Proposal
 
+Nuestra propuesta consiste en la construcción e implementación de un prototipo experimental de huerto flotante, el cual ya hemos modelado en 3D. Este prototipo será desplegado en la caleta "El Membrillo" en Valparaíso, Quinta Región, Chile. Contará con una serie de sensores, incluyendo sensores de temperatura y humedad, controlados por Arduino, todos ellos alimentados por energía solar. Además, incorporaremos una cámara para grabar el entorno y monitorear el huerto en tiempo real. Gracias a la tecnología 5G, se podrá acceder a una transmisión en vivo de los datos y del video, lo cual no sería posible sin esta avanzada tecnología. Estos datos permitirán la elaboración de un informe final con un análisis detallado, proporcionando una base sólida para futuros estudios.
+
+Prototipo versión 1:
+
+* 40 cm de diámetro.
+* Cúpula redondeada de 12,5 cm de alto.
+* Espacio para 4 celdas solares.
+* Espacio para 4 sensores de humedad y temperatura.
+* Cámara para monitorización remota
+* Sistema de anclaje al lecho marino.
+
+
+Our proposal involves the construction and implementation of an experimental floating garden prototype, which we have already modeled in 3D. This prototype will be deployed in the "El Membrillo" cove in Valparaíso, Quinta Region, Chile. It will feature a series of sensors, including temperature and humidity sensors, controlled by Arduino and powered by solar energy. Additionally, we will incorporate a camera to record the environment and monitor the garden in real-time. Thanks to 5G technology, live streaming of data and video will be possible, which would not be achievable without this advanced technology. These data will enable the creation of a final report with a detailed analysis, providing a solid foundation for future studies.
+
+Prototype version 1:
+
+* 40 cm in diameter.
+* Rounded dome 12.5 cm high.
+* Space for 4 solar cells.
+* Space for 4 humidity and temperature sensors.
+* Camera for remote monitoring
+* Anchoring system to the seabed.
+
+
+
+
+
 
