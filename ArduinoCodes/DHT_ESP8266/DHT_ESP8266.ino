@@ -1,7 +1,7 @@
 #include <ESP8266WiFi.h>
 #include <DHT.h>
-const char* ssid = "Luis Miguel-2.4G";
-const char* password = "990958835";
+const char* ssid = "MOVISTAR-WIFI6-47A8";
+const char* password = "WkHnfdkfkYaWndci39nY";
 WiFiClient client;
 #define DHTPIN 4      // Pin D4 en NodeMCU (equivalente a GPIO 2)
 #define DHTTYPE DHT11 // Definición del tipo de sensor DHT11
