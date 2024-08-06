@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Buoy Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a1a1a; /* Fondo gris oscuro */
+            color: #ffffff; /* Texto blanco */
+        }
+
+        header {
+            background-color: #333333; /* Encabezado gris oscuro */
+            color: #ffffff; /* Texto del encabezado blanco */
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #2b2b2b; /* Fondo del contenedor gris oscuro */
+            color: #ffffff; /* Texto del contenedor blanco */
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        .chart-container {
+            background-color: #1a1a1a; /* Fondo del gráfico gris oscuro */
+            border: 2px solid #0d47a1; /* Borde azul oscuro */
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .navbar {
+            background-color: #333333; /* Barra de navegación gris oscuro */
+            color: #ffffff; /* Texto de la barra de navegación blanco */
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: #ffffff; /* Enlaces en la barra de navegación blancos */
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .date-picker {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .date-picker input {
+            background-color: #444444;
+            color: #ffffff;
+            border: 1px solid #0d47a1;
+            padding: 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Smart Buoy Dashboard</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="#">About</a>
+        <a class="navbar-brand" href="#">Trends</a>
+    </nav>
+    <div class="container">
+        <h2>Measurements</h2>
+        <div class="date-picker">
+            <div class="form-group">
+                <label for="start-date">Start Date: </label>
+                <input type="date" class="form-control" id="start-date" name="start-date">
+            </div>
+            <div class="form-group">
+                <label for="end-date">End Date: </label>
+                <input type="date" class="form-control" id="end-date" name="end-date">
+            </div>
+        </div>
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var startDateInput = document.getElementById('start-date');
+            var endDateInput = document.getElementById('end-date');
+
+            startDateInput.addEventListener('change', updateChart);
+            endDateInput.addEventListener('change', updateChart);
+
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: [], // Etiquetas vacías para ser llenadas dinámicamente
+                    datasets: [{
+                        label: 'Value',
+                        data: [],
+                        borderColor: '#0d47a1', // Línea azul oscuro
+                        backgroundColor: 'rgba(0, 0, 0, 0)' // Sin fondo
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            ticks: {
+                                beginAtZero: true,
+                                color: '#ffffff' // Color de las etiquetas del eje Y
+                            },
+                            grid: {
+                                color: '#444444' // Color de las líneas de la cuadrícula del eje Y
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                color: '#ffffff' // Color de las etiquetas del eje X
+                            },
+                            grid: {
+                                color: '#444444' // Color de las líneas de la cuadrícula del eje X
+                            }
+                        }
+                    }
+                }
+            });
+
+            function updateChart() {
+                var startDate = startDateInput.value;
+                var endDate = endDateInput.value;
+
+                if (startDate && endDate) {
+                    // Aquí puedes agregar la lógica para actualizar el gráfico según las fechas seleccionadas
+                    console.log('Start Date:', startDate);
+                    console.log('End Date:', endDate);
+
+                    // Simulación de datos para el gráfico
+                    var dateRange = getDateRange(startDate, endDate);
+                    var values = dateRange.map((_, index) => 12.0 + index * 0.1); // Ejemplo de datos
+
+                    myChart.data.labels = dateRange;
+                    myChart.data.datasets[0].data = values;
+                    myChart.update();
+                }
+            }
+
+            function getDateRange(startDate, endDate) {
+                var start = new Date(startDate);
+                var end = new Date(endDate);
+                var dateArray = [];
+                var currentDate = start;
+
+                while (currentDate <= end) {
+                    dateArray.push(currentDate.toISOString().split('T')[0]);
+                    currentDate.setDate(currentDate.getDate() + 1);
+                }
+
+                return dateArray;
+            }
+        });
+    </script>
+</body>
+</html>
